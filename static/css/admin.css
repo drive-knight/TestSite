@@ -1,0 +1,20 @@
+#header{
+    background: #a1887f;
+}
+#branding h1, #branding h1 a:link, #branding h1 a:visited {
+    color: #fff;
+}
+
+div.breadcrumbs{
+    background: #bcaaa4
+}
+
+.module h2, .module caption, .inline-group h2 {
+    margin: 0;
+    padding: 8px;
+    font-weight: 400;
+    font-size: 13px;
+    text-align: left;
+    background: #a1887f;
+    color: #fff;
+}
