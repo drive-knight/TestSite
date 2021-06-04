@@ -73,6 +73,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'django.template.context_processors.media',
             ],
         },
     },
@@ -87,11 +88,9 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-        #'ENGINE': 'django.db.backends.mysql',
-        #'NAME': 'django',
-        #'USER': 'root',
-        #'PASSWORD': 'root',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        #'USER': 'Driveknight',
+        #'PASSWORD': 'satana15',
         #'HOST': 'localhost',
     }
 }
@@ -147,7 +146,6 @@ INTERNAL_IPS = ('127.0.0.1',)
 EMAIL_HOST = 'smtp.yandex.ru'
 EMAIL_PORT = 465
 EMAIL_HOST_USER = 'rok5a@yandex.ru'
-EMAIL_HOST_PASSWORD = 'ivan1997'
 EMAIL_USE_TLS = False
 EMAIL_USE_SSL = True
 
